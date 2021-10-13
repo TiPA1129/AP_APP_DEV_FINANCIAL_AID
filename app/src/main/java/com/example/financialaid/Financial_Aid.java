@@ -50,6 +50,7 @@ public class Financial_Aid extends AppCompatActivity {
             @Override
             public void onClick(View w) {
                 mathcalc();
+                System.out.println("done");
             }
         });
     }

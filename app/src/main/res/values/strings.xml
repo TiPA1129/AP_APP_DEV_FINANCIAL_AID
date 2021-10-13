@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Financial Aid</string>
+    <string name="Loan_Amount">Input Loan Amount</string>
+    <string name="Interest_Rate">Input Interest Rate</string>
+    <string name="Loan_Term">Input Loan Term</string>
+    <string name="Loan_Fees">Input Loan Fees </string>
+    <string name="Monthly_Payment"> (Monthly Payment Will Be Displayed Here) </string>
+    <string name="Total_Interest"> (Total Interest Will Be Displayed Here) </string>
+
+
+
+
+
+</resources>

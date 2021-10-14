@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Financial_Aid extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     private EditText AmountF, RateF, TermF, FeesF;
     private Button Calculate;
     private TextView Monthly_Payment, Total_Interest;
@@ -21,10 +21,10 @@ public class Financial_Aid extends AppCompatActivity {
 
         double Interest = Math.pow(Rate, Term) * (Amount + Fees) - (Amount + Fees);
         double TotalDue = Amount + Interest + Fees;
-        double Monthly = TotalDue / (Rate * 12);
+        double Monthly = TotalDue / (Term*12);
 
-        String outputD = "Your total interest is: " + String.valueOf(TotalDue);
-        String outputM = "Your monthly payment is: " + String.valueOf(outputD);
+        String outputD = "Interest due is: $" + String.format("%.2f", Interest);
+        String outputM = "Monthly payment due is: $" + String.format("%.2f",Monthly);
 
         Monthly_Payment.setText(outputM);
         Total_Interest.setText(outputD);
